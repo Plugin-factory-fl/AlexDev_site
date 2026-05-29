@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alex Software Services — reliable web development and Chrome extension development in one place.">
+  <title>Alex Software Services | Web & Chrome Extension Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container">
+      <a href="./" class="logo">Alex<span>Dev</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="./" data-nav="home">Home</a>
+        <a href="portfolio.html" data-nav="portfolio">Portfolio</a>
+        <a href="#contact" data-nav="contact" class="hide-mobile">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Web & Chrome Extension Development</p>
+          <h1>You need a <span class="highlight">website</span> or <span class="highlight">Chrome extension</span> — not another unreliable developer.</h1>
+          <p class="hero-lead">
+            Most businesses stall because they bounce between freelancers, agencies, and half-finished projects.
+            I deliver both custom websites and production-ready Chrome extensions as your single, dependable build partner.
+          </p>
+          <div class="hero-actions">
+            <a href="portfolio.html" class="btn btn-primary">View my work</a>
+            <a href="#contact" class="btn btn-secondary">Get in touch</a>
+          </div>
+        </div>
+        <img
+          src="assets/alex-headshot.jpg"
+          alt="Alex — web and Chrome extension developer"
+          class="hero-photo"
+          width="280"
+          height="280"
+        >
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="container">
+        <p class="section-label">The problem</p>
+        <h2>Your product is stuck between “almost done” and “never shipped”</h2>
+        <p class="section-intro">
+          Whether you need a site that converts or an extension that users actually install,
+          the same pain shows up: unclear scope, slow communication, and code that doesn’t hold up after launch.
+        </p>
+        <div class="problem-grid">
+          <article class="problem-card">
+            <h3><span class="icon-badge" aria-hidden="true">🌐</span> Websites that miss the mark</h3>
+            <p>Templates look fine in demos but fail on speed, SEO, and the workflows your business runs on every day.</p>
+          </article>
+          <article class="problem-card">
+            <h3><span class="icon-badge" aria-hidden="true">🧩</span> Extensions that never ship</h3>
+            <p>Manifest v3, permissions, and store review are easy to get wrong — and expensive when you have to rebuild.</p>
+          </article>
+          <article class="problem-card">
+            <h3><span class="icon-badge" aria-hidden="true">🔀</span> Too many vendors</h3>
+            <p>One person for design, another for the site, another for the extension. Handoffs multiply bugs and delay.</p>
+          </article>
+          <article class="problem-card">
+            <h3><span class="icon-badge" aria-hidden="true">⏳</span> No one accountable</h3>
+            <p>When something breaks after launch, you need one developer who owns the full stack — not a ticket queue.</p>
+          </article>
+        </div>
+
+        <div class="solution-panel">
+          <h3>One developer. Two specialties. Zero handoff drama.</h3>
+          <p>
+            Alex Software Services is built for founders and teams who want a single, reliable partner:
+            from landing pages and business sites to Chrome extensions that pass review and stay maintainable.
+            You get clear timelines, direct communication, and code you can grow on.
+          </p>
+          <ul class="pill-list">
+            <li>Custom websites</li>
+            <li>Chrome extensions (MV3)</li>
+            <li>Full-stack delivery</li>
+            <li>Post-launch support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <p class="section-label">What I build</p>
+        <h2>Services designed to ship — not slide decks</h2>
+        <p class="section-intro">
+          Pick the outcome you need. I handle architecture, implementation, and polish so you can focus on your product and customers.
+        </p>
+        <div class="services-grid">
+          <article class="service-card">
+            <p class="tag">Websites</p>
+            <h3>Business & product sites</h3>
+            <p>Fast, responsive sites tailored to your brand — from marketing pages to richer web apps, built for real users and search visibility.</p>
+            <a href="portfolio/websites.html" class="btn btn-ghost">See website projects →</a>
+          </article>
+          <article class="service-card chrome">
+            <p class="tag">Chrome extensions</p>
+            <h3>Browser tools that work</h3>
+            <p>Extensions that integrate cleanly with Chrome: content scripts, popups, background service workers, and store-ready packaging.</p>
+            <a href="portfolio/extensions.html" class="btn btn-ghost">See extension projects →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Ready to stop juggling vendors?</h2>
+          <p>Tell me what you’re building — a site, an extension, or both — and we’ll map the fastest path to a solid launch.</p>
+          <a href="mailto:hello@alexsoftwareservices.com" class="btn btn-primary">hello@alexsoftwareservices.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Alex Software Services</p>
+      <nav class="nav" aria-label="Footer">
+        <a href="./">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

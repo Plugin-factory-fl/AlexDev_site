@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of websites and Chrome extensions by Alex Software Services.">
+  <title>Portfolio | Alex Software Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="portfolio">
+  <header class="site-header">
+    <div class="container">
+      <a href="./" class="logo">Alex<span>Dev</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="./" data-nav="home">Home</a>
+        <a href="portfolio.html" data-nav="portfolio">Portfolio</a>
+        <a href="index.html#contact" class="hide-mobile">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <p class="section-label">Portfolio</p>
+        <h1>Work that ships</h1>
+        <p>Browse projects by category — custom websites and Chrome extensions built for real-world use.</p>
+      </div>
+    </header>
+
+    <section class="container category-grid">
+      <a href="portfolio/websites.html" class="category-card websites">
+        <span class="icon" aria-hidden="true">🌐</span>
+        <h2>Websites</h2>
+        <p>Marketing sites, business pages, and web experiences — placeholder gallery ready for your real case studies.</p>
+        <span class="arrow">View 5 projects →</span>
+      </a>
+      <a href="portfolio/extensions.html" class="category-card extensions">
+        <span class="icon" aria-hidden="true">🧩</span>
+        <h2>Chrome extensions</h2>
+        <p>Browser tools, productivity extensions, and MV3 builds — placeholder gallery ready for your real case studies.</p>
+        <span class="arrow">View 5 projects →</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Alex Software Services</p>
+      <nav class="nav" aria-label="Footer">
+        <a href="./">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

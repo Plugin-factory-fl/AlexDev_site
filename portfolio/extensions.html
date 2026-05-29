@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chrome extension portfolio — Alex Software Services.">
+  <title>Chrome Extension Portfolio | Alex Software Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-page="portfolio">
+  <header class="site-header">
+    <div class="container">
+      <a href="../" class="logo">Alex<span>Dev</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="../" data-nav="home">Home</a>
+        <a href="../portfolio.html" data-nav="portfolio">Portfolio</a>
+        <a href="../index.html#contact" class="hide-mobile">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../portfolio.html">Portfolio</a>
+          <span>/</span>
+          <span aria-current="page">Chrome extensions</span>
+        </nav>
+        <p class="section-label">Chrome extensions</p>
+        <h1>Extension projects</h1>
+        <p>Placeholder entries — swap in your real extensions, store links, and demos when ready.</p>
+      </div>
+    </header>
+
+    <section class="container portfolio-grid">
+      <article class="project-card extensions">
+        <div class="project-thumb">Preview placeholder</div>
+        <div class="project-body">
+          <span class="project-tag">Placeholder 01</span>
+          <h3>Productivity tab manager</h3>
+          <p>Session saving and tab grouping for power users.</p>
+        </div>
+      </article>
+      <article class="project-card extensions">
+        <div class="project-thumb">Preview placeholder</div>
+        <div class="project-body">
+          <span class="project-tag">Placeholder 02</span>
+          <h3>Page annotation tool</h3>
+          <p>Highlight and note-taking overlay on any site.</p>
+        </div>
+      </article>
+      <article class="project-card extensions">
+        <div class="project-thumb">Preview placeholder</div>
+        <div class="project-body">
+          <span class="project-tag">Placeholder 03</span>
+          <h3>Form autofill assistant</h3>
+          <p>Secure field templates for repetitive workflows.</p>
+        </div>
+      </article>
+      <article class="project-card extensions">
+        <div class="project-thumb">Preview placeholder</div>
+        <div class="project-body">
+          <span class="project-tag">Placeholder 04</span>
+          <h3>SEO quick-audit panel</h3>
+          <p>On-page checks and meta previews from the toolbar.</p>
+        </div>
+      </article>
+      <article class="project-card extensions">
+        <div class="project-thumb">Preview placeholder</div>
+        <div class="project-body">
+          <span class="project-tag">Placeholder 05</span>
+          <h3>API debug side panel</h3>
+          <p>Request inspector for developers testing web apps.</p>
+        </div>
+      </article>
+    </section>
+
+    <div class="container" style="padding-bottom: 3rem;">
+      <a href="../portfolio.html" class="btn btn-secondary">← Back to portfolio</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Alex Software Services</p>
+      <nav class="nav" aria-label="Footer">
+        <a href="../">Home</a>
+        <a href="../portfolio.html">Portfolio</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
