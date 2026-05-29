@@ -5,26 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Chrome extension portfolio — Alex Software Services.">
   <title>Chrome Extension Portfolio | Alex Software Services</title>
+  <script>
+    (function () {
+      var t = localStorage.getItem("alexdev-theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body data-page="portfolio">
   <header class="site-header">
-    <div class="container">
+    <div class="container header-inner">
       <a href="../" class="logo">Alex<span>Dev</span></a>
-      <nav class="nav" aria-label="Main">
-        <a href="../" data-nav="home">Home</a>
-        <a href="../portfolio.html" data-nav="portfolio">Portfolio</a>
-        <a href="../index.html#contact" class="hide-mobile">Contact</a>
-      </nav>
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" aria-label="Toggle light or dark mode" aria-pressed="false">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span class="theme-toggle-label">Light</span>
+        </button>
+        <nav class="nav" aria-label="Main">
+          <a href="../" data-nav="home">Home</a>
+          <a href="../portfolio.html" data-nav="portfolio">Portfolio</a>
+          <a href="../contact.html" data-nav="contact">Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
     <header class="page-header">
-      <div class="container">
+      <div class="container reveal">
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="../portfolio.html">Portfolio</a>
           <span>/</span>
@@ -37,7 +49,7 @@
     </header>
 
     <section class="container portfolio-grid">
-      <article class="project-card extensions">
+      <article class="project-card extensions reveal">
         <div class="project-thumb">Preview placeholder</div>
         <div class="project-body">
           <span class="project-tag">Placeholder 01</span>
@@ -45,7 +57,7 @@
           <p>Session saving and tab grouping for power users.</p>
         </div>
       </article>
-      <article class="project-card extensions">
+      <article class="project-card extensions reveal reveal-delay-1">
         <div class="project-thumb">Preview placeholder</div>
         <div class="project-body">
           <span class="project-tag">Placeholder 02</span>
@@ -53,7 +65,7 @@
           <p>Highlight and note-taking overlay on any site.</p>
         </div>
       </article>
-      <article class="project-card extensions">
+      <article class="project-card extensions reveal reveal-delay-1">
         <div class="project-thumb">Preview placeholder</div>
         <div class="project-body">
           <span class="project-tag">Placeholder 03</span>
@@ -61,7 +73,7 @@
           <p>Secure field templates for repetitive workflows.</p>
         </div>
       </article>
-      <article class="project-card extensions">
+      <article class="project-card extensions reveal reveal-delay-2">
         <div class="project-thumb">Preview placeholder</div>
         <div class="project-body">
           <span class="project-tag">Placeholder 04</span>
@@ -69,7 +81,7 @@
           <p>On-page checks and meta previews from the toolbar.</p>
         </div>
       </article>
-      <article class="project-card extensions">
+      <article class="project-card extensions reveal reveal-delay-2">
         <div class="project-thumb">Preview placeholder</div>
         <div class="project-body">
           <span class="project-tag">Placeholder 05</span>
@@ -80,7 +92,7 @@
     </section>
 
     <div class="container" style="padding-bottom: 3rem;">
-      <a href="../portfolio.html" class="btn btn-secondary">← Back to portfolio</a>
+      <a href="../portfolio.html" class="btn btn-secondary reveal">← Back to portfolio</a>
     </div>
   </main>
 
@@ -90,13 +102,29 @@
       <nav class="nav" aria-label="Footer">
         <a href="../">Home</a>
         <a href="../portfolio.html">Portfolio</a>
+        <a href="../contact.html">Contact</a>
       </nav>
     </div>
   </footer>
+
+  <div id="email-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" data-close-modal aria-label="Close">×</button>
+      <p class="modal-eyebrow">Let's build</p>
+      <h2 id="modal-title" class="modal-title">Your email client is ready</h2>
+      <p class="modal-desc">Copy my address below or paste it into your favorite mail app.</p>
+      <div class="modal-email-row">
+        <span class="modal-email">hello@alexsoftwareservices.com</span>
+        <button type="button" class="btn btn-green modal-copy">Copy to clipboard</button>
+      </div>
+    </div>
+  </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
   <script src="../js/main.js"></script>
+  <script src="../js/site.js"></script>
 </body>
 </html>

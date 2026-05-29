@@ -14,6 +14,7 @@ After GitHub Pages is enabled:
 |------|------|
 | Home | `/index.html` |
 | Portfolio hub | `/portfolio.html` |
+| Contact | `/contact.html` |
 | Website projects | `/portfolio/websites.html` |
 | Extension projects | `/portfolio/extensions.html` |
 
